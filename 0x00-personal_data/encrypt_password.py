@@ -12,6 +12,7 @@ def hash_password(password: str) -> bytes:
     hashed = hashpw(enc, bcrypt.gensalt())
     return hashed
 
+
 def is_valid(hashed_password: bytes, password: str) -> bool:
     """Check whether a passw is valid
     Args:
